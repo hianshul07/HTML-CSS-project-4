@@ -1,0 +1,79 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0% 5em;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  font-family: "Orbitron";
+  align-items: center;
+  min-height: 6em;
+  justify-content: space-around;
+  font-size: 1.6rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul :nth-child(1) {
+  text-decoration: underline;
+  font-weight: 500;
+}
+nav .button-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav .button-group button {
+  margin-left: 2em;
+  height: 2.4em;
+  width: 150px;
+  font-family: "Poppins";
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 0.8em;
+  color: #525252;
+  background-color: transparent;
+}
+nav .button-group svg {
+  margin-top: 10px;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+}
+.hero-container :nth-child(5) {
+  position: absolute;
+  top: 10em;
+}
+.hero-container :nth-child(2) img {
+  position: relative;
+  left: 60em;
+  top: -120px;
+  right: 0%;
+}
+.hero-container .square {
+  z-index: -1;
+  position: relative;
+  top: 21em;
+  left: 12.8em;
+}
+.hero-container .globe {
+  position: absolute;
+  left: 64em;
+  top: 8em;
+}
+.hero-container .hero-container-right {
+  min-width: 60%;
+}/*# sourceMappingURL=style.css.map */

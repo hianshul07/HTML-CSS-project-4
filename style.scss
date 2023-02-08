@@ -26,17 +26,19 @@ nav {
 		// font-family: 'Orbitron';
 		justify-content: space-between;
 
-		:nth-child(1) {
+		> :nth-child(1) {
 			text-decoration: underline;
 			font-weight: 500;
 		}
 	}
 
 	.button-group {
+		// width: 110%;
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
 		// width: 60px;
+		flex-wrap: wrap;
 
 		// div {
 		button {
@@ -62,19 +64,27 @@ nav {
 .hero-container {
 	display: flex;
 	align-items: center;
-	:nth-child(5) {
+	justify-content: space-between;
+	> :nth-child(5) {
 		// z-index: 1;
 		position: absolute;
 		top: 10em;
 	}
 
-	:nth-child(2) {
-		img {
-			position: relative;
-			left: 60em;
-			top: -120px;
-			right: 0%
-		};
+	> :nth-child(2) {
+		position: absolute;
+		left: 100em;
+		top: 10em;
+		right: 0%;
+		max-width: fit-content;
+	}
+
+	> :nth-child(3) {
+		position: absolute;
+		left: 54em;
+		top: 48em;
+		right: 0%;
+		max-width: fit-content;
 	}
 
 	.square {
@@ -92,6 +102,17 @@ nav {
 	}
 
 	.hero-container-right {
-		min-width: 60%;
+		width: 50%;
+		// margin-left: 50px;
+		display: flex;
+		flex-direction: column;
+		// z-index: 1;
+		.hero-heading {
+			font-size: 4rem;
+		}
+
+		.icons {
+			min-width: 400px;
+		}
 	}
 }

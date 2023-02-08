@@ -15,7 +15,7 @@ nav {
   grid-template-columns: 2fr 4fr 2fr;
   font-family: "Orbitron";
   align-items: center;
-  min-height: 6em;
+  min-height: 20vh;
   justify-content: space-around;
   font-size: 1.6rem;
 }
@@ -52,6 +52,7 @@ nav .button-group svg {
 
 .hero-container {
   display: flex;
+  height: 80vh;
   align-items: center;
   justify-content: space-between;
 }
@@ -78,8 +79,8 @@ nav .button-group svg {
 .hero-container .square {
   z-index: -1;
   position: relative;
-  top: 21em;
-  left: 12.8em;
+  top: 9em;
+  left: 12em;
 }
 .hero-container .globe {
   position: absolute;
@@ -87,13 +88,62 @@ nav .button-group svg {
   top: 8em;
 }
 .hero-container .hero-container-right {
-  width: 50%;
+  width: 60%;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .hero-container .hero-container-right .hero-heading {
   font-size: 4rem;
+  font-family: "Orbitron";
 }
-.hero-container .hero-container-right .icons {
-  min-width: 400px;
+.hero-container .hero-container-right .hero-description {
+  max-width: 72%;
+  font-size: 1rem;
+  color: #525252;
+  font-family: "Poppins";
+  text-align: center;
+}
+.hero-container .hero-container-right div .button-email {
+  margin-right: 10px;
+  padding: 0% 2em;
+  height: 2em;
+  font-family: "Orbitron";
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 2px solid #525252;
+  border-radius: 0.6em;
+  color: #525252;
+  background-color: transparent;
+}
+.hero-container .hero-container-right div .button-join {
+  margin-left: 10px;
+  padding: 0% 1.2em;
+  height: 2em;
+  font-family: "Orbitron";
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 2px solid #525252;
+  border-radius: 0.6em;
+  color: white;
+  background-color: black;
+}
+.hero-container .hero-container-right > :nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-container .hero-container-right > :nth-child(4) h4 {
+  color: #525252;
+  font-size: 1.6rem;
+  font-family: "Poppins";
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.hero-container .hero-container-right > :nth-child(4) .icons {
+  min-width: 16em;
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
